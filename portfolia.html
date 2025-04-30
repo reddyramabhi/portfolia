@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/portfolio.html#About -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #444;
+        }
+        header{
+            background-color: burlywood;
+            color: white;
+            padding-left: 50px;
+            text-align: center;
+        }
+        nav{
+            background-color: aliceblue;
+            color: black;
+           text-align: center;
+           padding: 20px;
+           
+
+
+
+        }
+        header::p ::first-letter{
+            color: blue;
+        }
+            
+        }
+        
+        }
+        nav :hover{
+            color: blueviolet;
+            text-decoration: dotted;
+            
+
+        }
+        table{
+            width: 300px;
+          border-collapse:collapse ;
+            margin: 20px;
+            
+        }
+        table th,td{
+            border: 1px solid;
+            padding: 20px;
+            text-align: left;
+
+        }
+        section{
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 900px;
+
+        }
+        
+            
+        .Hobbies{
+            margin: 15 0px;
+            padding: 50px;
+        
+        }
+        .skills{
+            margin: 20px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>MY PORTOFOLIO</h1>
+
+
+    </header>
+    <nav>
+       
+        <a href="http://127.0.0.1:5500/portfolio.html#About"> About</a>
+        <a href="http://127.0.0.1:5500/portfolio.html#Education">Education</a>
+        <a href="http://127.0.0.1:5500/portfolio.html#Contact">Contact</a>
+        <a href="http://127.0.0.1:5500/portfolio.html#Address"> Address</a>
+    </nav>
+    <section id="About">
+        <h1>About</h1>
+        <h2>Gajjal Abhi Rami Reddy </h2>
+        <p>"I’m a final-year B.Tech student at Narasaraopet Engineering College with a strong interest in web development and programming. I'm currently training in MERN full stack development and have working knowledge of Python and C. I'm eager to apply my skills in real-world projects and grow as a full-stack developer."</p>
+            <h1>languages known</h1>
+            <ul>
+                <li>Telugu</li>
+                <li>English</li>
+                <li>Hindi</li>
+            </ul>
+    </section>
+    <section id="Education">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>Education</th>
+                    <th>YEAR OF PASSING</th>
+                    <th>PERECENTAGE</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>B.TECH</td>
+                    <td>2026</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>INTER</td>
+                    <td>2022</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>10TH </td>
+                    <td>2020</td>
+                    <td>95%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+        <section id="Contact">
+            <h1>Contact</h1>
+            <strong>
+            mobile number:</strong>9959709750;
+            <br> <br>
+            <strong>whatsapp:</strong>9959709750;
+            <br> <br>
+           <strong> Email:</strong>gajjalaabhi292004@gmail.com;
+        </section>
+        <section id="Address">
+            <h1>Address</h1>
+            village:butchipapanapalem;
+            <br>
+            district:palanadu;
+            <br>
+            1-522 near main road,rompicherla(mandal).
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading books</li>
+                <li>watching movies</li>
+            </ul>
+        
+       
+    
+            <h1>skills</h1>
+            <ul>
+                <li>Good at communication</li>
+                <li>Good in coading</li>
+            </ul>
+        
+        </section>
+       
+
+       
+    
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
